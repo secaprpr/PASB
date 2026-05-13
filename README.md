@@ -12,35 +12,11 @@ PASB includes:
 - **SDPR**: Similarity-based Dynamic Path Refinement. During training bridge sampling, a similarity signal between generated IHC and adjacent reference IHC softly corrects the transport path and modulates noise.
 - **PASB dataset mode**: Adjacent H&E/IHC pairs are read by matching index.
 
-The main implementation files are:
-
-```text
-models/pasb_model.py      PASB model, losses, CDAL, training-time SDPR
-data/pasb_dataset.py      weakly supervised adjacent-section dataset
-run_pasb_train.sh         example PASB training command
-run_pasb_test.sh          example PASB testing command
-```
-
-## Environment
-
-Activate the project environment before training or testing:
-
-```bash
-mamba activate pasb
-python -c "import torch; print(torch.__version__)"
-```
-
 The repository supports:
 
 ```bash
 --gpu_ids -1     # CPU
 --gpu_ids 0      # CUDA GPU
-```
-
-If `dominate` is missing:
-
-```bash
-python -m pip install dominate
 ```
 
 ## Data Layout
