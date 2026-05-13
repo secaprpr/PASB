@@ -1,0 +1,28 @@
+# Python cache / tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime outputs
+checkpoints/
+results/
+runs/
+web/
+
+# Logs and local metadata
+*.log
+.DS_Store
+
+# Large experiment artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx

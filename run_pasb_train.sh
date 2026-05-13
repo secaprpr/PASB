@@ -1,0 +1,1 @@
+python train.py --dataroot ./datasets/BCI --name bci_PASB --model pasb --mode pasb --pasb_classifier_net resnet50 --pasb_pretrained_C ./checkpoints/ihc_classifier/latest_net_C.pth --lambda_SB 1.0 --lambda_NCE 1.0 --lambda_CDAL 1.0 --gpu_ids 0
